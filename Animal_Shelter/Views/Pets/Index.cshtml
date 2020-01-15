@@ -1,0 +1,13 @@
+@using AnimalShelter.Models;
+@model List<AnimalShelter.Models.Pets>;
+
+@if (Model.Count == 0)
+{
+    <h3>No animals in list </h3>
+}
+<ul>
+@foreach (Pets pet in Model)
+{
+    <li>@Html.ActionLink($"{pet.AnimalType}" ,"Details", new {id = pet.Id}) </li>
+}
+</ul>
