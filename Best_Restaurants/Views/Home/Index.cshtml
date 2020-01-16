@@ -2,17 +2,8 @@
     Layout = "_Layout";
 }
 
-
-<h1 class="jumbotron">Epicodus Best Restaurants</h1>
-<div class="card">
-    <div class="card-body">
-
-    </div>
-</div>
-<div class="card">
-    <div class="card-body">
-    
-    </div>
-</div>
+<h1>Welcome to the Best Restaurants!</h1>
+@using BestRestaurants.Models;
 <p>@Html.ActionLink("See all restaurants", "Index", "Restaurants") </p> 
-
+<p>@Html.ActionLink("Add restaurants", "Create", "Restaurants") </p> 
+<p>@Html.ActionLink("See all Cuisines", "Index", "Cuisines")</p>

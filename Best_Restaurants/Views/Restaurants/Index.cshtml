@@ -1,5 +1,9 @@
+@{
+  Layout = "_Layout";
+}
 
 @using BestRestaurants.Models;
+@model List<BestRestaurants.Models.Restaurant>;
 
 <h1>BestRestaurants</h1>
 
@@ -10,6 +14,6 @@
 
 @foreach (Restaurant restaurant in Model)
 {
-  <li>@Html.ActionLink($"{restaurant.Description}", "Details", new { id = restaurant.RestaurantId })</li>
+  <li>@Html.ActionLink($"{restaurant.Description}", "Details", new { id = restaurant.RestaurantId})</li>
 }
 <p>@Html.ActionLink("Add new restaurant", "Create")</p>

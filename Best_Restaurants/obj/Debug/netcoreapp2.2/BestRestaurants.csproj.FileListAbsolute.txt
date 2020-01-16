@@ -44,9 +44,6 @@
 /Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/BestRestaurants.TagHelpers.input.cache
 /Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/BestRestaurants.TagHelpers.output.cache
 /Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/BestRestaurants.RazorCoreGenerate.cache
-/Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/Razor/Views/Cuisine/Create.g.cshtml.cs
-/Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/Razor/Views/Cuisine/Details.g.cshtml.cs
-/Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/Razor/Views/Cuisine/Index.g.cshtml.cs
 /Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs
 /Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/Razor/Views/Shared/Footer.g.cshtml.cs
 /Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout.g.cshtml.cs
@@ -59,3 +56,10 @@
 /Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/Razor/Views/Restaurants/Create.g.cshtml.cs
 /Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/Razor/Views/Restaurants/Details.g.cshtml.cs
 /Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/Razor/Views/Restaurants/Index.g.cshtml.cs
+/Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/Razor/Views/Restaurants/Edit.g.cshtml.cs
+/Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/Razor/Views/Restaurants/Delete.g.cshtml.cs
+/Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/Razor/Views/Cuisines/Create.g.cshtml.cs
+/Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/Razor/Views/Cuisines/Details.g.cshtml.cs
+/Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/Razor/Views/Cuisines/Index.g.cshtml.cs
+/Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/Razor/Views/Cuisines/Delete.g.cshtml.cs
+/Users/Guest/Desktop/Best_Restaurants.Solution/Best_Restaurants/obj/Debug/netcoreapp2.2/Razor/Views/Cuisines/Edit.g.cshtml.cs

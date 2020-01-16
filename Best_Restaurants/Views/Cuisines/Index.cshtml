@@ -1,0 +1,13 @@
+@using BestRestaurants.Models
+
+@if (Model.Count == 0)
+{
+    <p>There are no Cuisines in the list</p>
+}
+
+@foreach(Cuisine cuisine in Model)
+{
+    <li>model.Description</li>
+}
+<p>@Html.ActionLink("Home", "Index", "Home")</p>
+

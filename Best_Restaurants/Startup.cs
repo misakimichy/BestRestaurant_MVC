@@ -7,7 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using BestRestaurants.Models;
 
 namespace BestRestaurants
-{
+{ 
   public class Startup
   {
     public Startup(IHostingEnvironment env)
@@ -17,7 +17,6 @@ namespace BestRestaurants
           .AddJsonFile("appsettings.json");
       Configuration = builder.Build();
     }
-
     public IConfigurationRoot Configuration { get; set; }
 
     public void ConfigureServices(IServiceCollection services)
@@ -28,7 +27,6 @@ namespace BestRestaurants
         .AddDbContext<BestRestaurantsContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"]));
     }
-
     public void Configure(IApplicationBuilder app)
     {
       app.UseStaticFiles();
@@ -49,3 +47,5 @@ namespace BestRestaurants
     }
   }
 }
+
+
