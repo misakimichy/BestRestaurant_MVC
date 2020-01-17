@@ -1,18 +1,30 @@
-# Vendor and Order Tracker
+# Best Restaurant
 
 
-#### _A C# web application which uses ASP.Net Core MVC Web Application and objects within objects.  - 12/20/19_
+#### _A C# web application which uses ASP.Net Core MVC Web Application and objects within objects.  - 01/16/2020_
 
-#### _By **Jamila Aliyeva**_
+#### _By **Misaki Koonce**_
 
 ## Description
 
-A C# program where the user is given the option to view all vendors or to add new vendors. When the user selects the "Add a new Vendor" option he or she is directed to a form where they are asked to enter a vendor name. After, they are directed to another page which allows the user to select their vendor. Once the user has clicked on their vendor, the user displayed another form for filling out order descriptions. Once submitted, he or she is redirected to a page where they are able to click on orders and be directed to a separate page which displays both vendor and order details.
+Create a website where users can add their favorite restaurants based on the type of cuisine they offer.
+
+
+## This application should have
+
+- `Cuisine` class - has all CRUD functionality (Create, Read, Update, Delete). "Read" means to view a particular cuisine and to list out all of the cuisines.
+
+- `Restaurant` class - has CRUD functionality
+
+- `Restaurant` class has its Name and BestFood properties.
+
+- There is a connection between a cuisine and a restaurant in the database. A `cuisine` can have many restaurants, but a `restaurant` can only be attached to one cuisine.
+
 ## Setup/Installation Requirements
 
 1. Open command line and clone this repository to Desktop:
     ```
-    $ git clone https://github.com/Jamila59/Order.Solution.git
+    $ git clone https://github.com/misakimichy/BestRestaurant_MVC.git
     ```
 2. In command line:
     ```
@@ -23,22 +35,13 @@ A C# program where the user is given the option to view all vendors or to add ne
 * No known bugs at this time.
 
 ## Technologies Used
-* C# / .NET / ASP.Net Core MVC Web Application
+* CSS, Bootstrap, C#, .NET, ASP.Net Core MVC and Entity
 
 ## Support and contact details
 
-_Please contact Jamila Aliyeva with questions and comments at Aliyeva852@gmail.com ._
+_Please contact Misaki Koonce with questions and comments at misaki.koonce@gmail.com ._
 
 ### MIT License
-Copyright (c) 2019 Jamila Aliyeva
-
-*Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*
-
-
-Copyright (c) 2016 **_Jamila Aliyeva_**
+Copyright (c) 2020 **_Misaki Koonce_**
 
 
