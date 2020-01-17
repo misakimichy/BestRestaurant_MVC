@@ -21,52 +21,59 @@ namespace BestRestaurants.Controllers
             List<Cuisine> model = _db.Cuisines.ToList();
             return View(model);
         }
+
          public ActionResult Create()
         {
-        return View();
+            return View();
         }
 
         [HttpPost]
         public ActionResult Create(Cuisine cuisine)
         {
-        _db.Cuisines.Add(cuisine);
-        _db.SaveChanges();
-        return RedirectToAction("Index");
+            _db.Cuisines.Add(cuisine);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
         }
 
         public ActionResult Details(int id)
         {
-        Cuisine thisCuisine = _db.Cuisines.FirstOrDefault(cuisine => cuisine.CuisineId == id);
-        return View(thisCuisine);
+            List<Restaurant> restaurantOfCuisine = _db.Restaurants.Where(restaurant => restaurant.CuisineId == id).ToList();
+            // List<Restaurant> restaurantOfCuisine = _db.Restaurants.ToList();
+            string restaurantOfCuisineList = string.Join(",", restaurantOfCuisine);
+            System.Console.WriteLine(restaurantOfCuisineList);
+            ViewBag.restaurantOfCuisine = restaurantOfCuisine;
+
+            Cuisine thisCuisine = _db.Cuisines.FirstOrDefault(cuisine => cuisine.CuisineId == id);
+            return View(thisCuisine);
         }
 
         public ActionResult Edit(int id)
         {
-        var thisCuisine = _db.Cuisines.FirstOrDefault(cuisine => cuisine.CuisineId == id);
-        return View(thisCuisine);
+            var thisCuisine = _db.Cuisines.FirstOrDefault(cuisine => cuisine.CuisineId == id);
+            return View(thisCuisine);
         }
 
         [HttpPost]
         public ActionResult Edit(Cuisine cuisine)
         {
-        _db.Entry(cuisine).State = EntityState.Modified;
-        _db.SaveChanges();
-        return RedirectToAction("Index");
+            _db.Entry(cuisine).State = EntityState.Modified;
+            _db.SaveChanges();
+            return RedirectToAction("Index");
         }
 
         public ActionResult Delete(int id)
         {
-        var thisCuisine = _db.Cuisines.FirstOrDefault(cuisine => cuisine.CuisineId == id);
-        return View(thisCuisine);
+            var thisCuisine = _db.Cuisines.FirstOrDefault(cuisine => cuisine.CuisineId == id);
+            return View(thisCuisine);
         }
 
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {
-        var thisCuisine = _db.Cuisines.FirstOrDefault(cuisine => cuisine.CuisineId == id);
-        _db.Cuisines.Remove(thisCuisine);
-        _db.SaveChanges();
-        return RedirectToAction("Index");
+            var thisCuisine = _db.Cuisines.FirstOrDefault(cuisine => cuisine.CuisineId == id);
+            _db.Cuisines.Remove(thisCuisine);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }

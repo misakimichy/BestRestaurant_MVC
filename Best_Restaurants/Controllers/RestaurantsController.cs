@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using BestRestaurants.Models;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,7 @@ namespace BestRestaurants.Controllers
         }
         public ActionResult Create()
         {
+            ViewBag.CuisineId = new SelectList(_db.Cuisines, "CuisineId", "Name");
             return View();
         }
         [HttpPost]
@@ -41,6 +43,7 @@ namespace BestRestaurants.Controllers
         public ActionResult Edit(int id)
         {
             var thisRestaurant = _db.Restaurants.FirstOrDefault(restaurants => restaurants.RestaurantId == id);
+            ViewBag.CuisineId = new SelectList(_db.Cuisines, "CuisineId", "Name");
             return View(thisRestaurant);
         }
 

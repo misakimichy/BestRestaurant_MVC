@@ -1,13 +1,20 @@
 @using BestRestaurants.Models
+@model List<BestRestaurants.Models.Cuisine>;
+@{
+    Layout = "_Layout";
+}
 
-@if (Model.Count == 0)
+<h1>List of Cuisine</h1>
+
+@if (@Model.Count == 0)
 {
     <p>There are no Cuisines in the list</p>
 }
 
 @foreach(Cuisine cuisine in Model)
 {
-    <li>model.Description</li>
+    <li>@Html.ActionLink($"{cuisine.Name}", "Details", new { id = cuisine.CuisineId })</li>
 }
+
 <p>@Html.ActionLink("Home", "Index", "Home")</p>
 
