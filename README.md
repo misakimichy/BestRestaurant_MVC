@@ -1,7 +1,7 @@
 # Best Restaurant
 
 
-#### _A C# web application which uses ASP.Net Core MVC Web Application and objects within objects.  - 01/16/2020_
+#### _A C# web application which uses ASP.Net Core MVC with database  - 01/16/2020_
 
 #### _By **Misaki Koonce**_
 
